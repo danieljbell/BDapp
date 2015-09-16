@@ -8,3 +8,9 @@ This repository serves as a "template" for rolling out new magazine issues for t
 - Bootstrap CSS + JS v3.3.5
 - OwlCarousel CSS + JS v1.3.2
 - FitVids.js v1.1.0
+
+## To view a local demo
+- Clone the repo to your local machine
+- In terminal, ```cd``` to the repo
+- Run ```npm install``` to install all dependencies for the project
+- Run ```gulp``` after dependencies have installed to view in browser
