@@ -1,3 +1,4 @@
+// Styles the header
 .column-header {
   background: $column-blue !important;
 }
@@ -5,14 +6,19 @@
 .column-title {
   font-family: 'BellGothic-Black', sans-serif;
   color: #fff;
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
+
+
+
+// Styles the sponsor section
 .sponsor {
   color: $column-green;
   border-bottom: 1px solid $column-green;
   font-family: 'Aleo-Regular', serif;
   text-transform: uppercase;
+  font-size: 1.1em;
 }
 
 .sponsor-logo {
@@ -20,6 +26,9 @@
   max-width: 220px;
 }
 
+
+
+// Styles the name + author
 .column-name {
   font-family: 'Aleo-Light', serif;
   font-size: 1.75em;
@@ -28,11 +37,15 @@
 }
 
 .column-author {
-  font-size: 0.75em;
+  font-size: 0.7em;
 }
 
+
+
+// Styles the content of the story
 .column-story {
   font-family: 'Aleo-Regular', serif;
+  border-bottom: 8px solid lighten($column-blue, 60%);
   p {
     margin-bottom: 1em;
     &:first-child {
@@ -52,4 +65,29 @@
     margin-bottom: 0;
     text-transform: none;
   }
+}
+
+
+
+// Styles the Author Contact section at bottom of story
+.author-contact {
+  background: $column-blue;
+  color: #fff;
+}
+
+.email-icon {
+  width: 100%;
+  max-width: 30px;
+  margin-right: 10px;
+  float: left;
+  path {
+    fill: #fff;
+  }
+}
+
+.author-bio {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 0.85em;
+  line-height: 1.1em;
 }

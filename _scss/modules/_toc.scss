@@ -18,11 +18,15 @@ a {
   }
   p {
     color: $dark;
+    line-height: 0.75em;
   }
   &:last-child {
     .toc-departments {
       border-bottom: 0;
     }
+  }
+  em {
+    font-size: 0.75em;
   }
 }
 
