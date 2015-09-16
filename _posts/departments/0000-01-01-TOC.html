@@ -9,7 +9,7 @@ category: departments
 <div id="owl-example" class="owl-carousel">
   {% for post in site.posts reversed %}
     {% if post.category == 'features' %}
-    <a href="navto:/{{ post.url | remove:'features/' | remove:'.html' }}">
+    <a href="{{ post.url }}">
       <img src="{{ site.baseurl}}/img/{{ post.computer-title }}.jpg" alt="">
       <h1 class="p-x">{{ post.title }}</h1>
     </a>
@@ -20,7 +20,7 @@ category: departments
   {% for post in site.posts reversed %}
     {% if post.category == 'departments' %}
       {% if post.title != 'Table of Contents' %}
-      <a href="navto:/{{ post.url | remove:'departments/' | remove:'.html' }}">
+      <a href="{{ post.url }}">
         <div class="m-x toc-departments">
           <h2>{{ post.title }}</h2>
           {% if post.author != null %}
