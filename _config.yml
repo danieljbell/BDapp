@@ -1,5 +1,5 @@
 name: The Growth Issue
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 inlcude: ["fonts"]
-baseurl: '../BDApp'
+baseurl: ''
 permalink: none
