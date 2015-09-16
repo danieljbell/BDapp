@@ -1,0 +1,29 @@
+<div class="header-container">
+  <header {% if page.path contains 'column' %}class="column-header"{% endif %}>
+    {% if page.path contains 'column' %}
+      <h1 class="column-title">{{ page.title }}</h1>
+    {% else %}
+      {% include icons/BD-logo.html %}
+    {% endif %}
+
+  </header>
+  {% if page.path contains 'column' %}
+  {% else %}
+  <div class="cut">
+    {{ site.name }}
+  </div>
+  {% endif %}
+  {% if page.author-img != null %}
+    <div class="author-img">
+      <img src="{{ site.baseurl }}/img/{{ page.author-img }}.jpg" alt="">
+    </div>
+  {% endif %}
+  {% if page.category == 'features' %}
+  <div class="article-cover-img">
+    <div>
+      <img src="{{ site.baseurl}}/img/{{ page.computer-title }}.jpg" alt="">
+      <h1 class="p-x">{{ page.title }}</h1>
+    </div>
+  </div>
+  {% endif %}
+</div>

@@ -1,0 +1,61 @@
+.header-container {
+  position: relative;
+  header {
+    background: $bdo;
+    padding: 1.5em 1rem 0.5em;
+    svg {
+      width: 100%;
+      max-width: 160px;
+    }
+  }
+
+  .cut {
+    background: $dark;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.65);
+    font-family: 'Sentinel-Book',serif;
+    font-size: 0.85em;
+    display: inline-block;
+    padding: 0.4em 1rem;
+    position: relative;
+    &:after {
+      content: '';
+      background: url('../img/cut-box.svg') top left no-repeat;
+      background-size: 2.1em 2.45em;
+      display: inline-block;
+      width: 2em;
+      height: 2.45em;
+      position: absolute;
+      top: 0;
+      right: -1.25em;
+    }
+  }
+
+  .author-img img {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    position: absolute;
+    top: 1.75rem;
+    right: 0.75rem;
+    @include bp {
+      height: 6rem;
+      width: 6rem;
+      top: 1rem;
+    }
+  }
+
+  .article-cover-img {
+    div {
+      margin-top: -41px;
+      h1 {
+        position: absolute;
+        bottom: 0;
+        color: #fff;
+        text-shadow: $text-shadow;
+        z-index: 2;
+      }
+    }
+  }
+
+}

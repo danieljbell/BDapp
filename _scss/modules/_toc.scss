@@ -1,0 +1,39 @@
+.toc-bg {
+  background-color: $toc;
+  margin-top: -2.2em;
+  padding: 3.2em 1em 0.5em;
+}
+
+a {
+  position: relative;
+  h1 {
+    position: absolute;
+    bottom: -2.3em;
+    color: #fff;
+    text-shadow: $text-shadow;
+  }
+  h2 {
+    color: $dark;
+    margin-bottom: 0;
+  }
+  p {
+    color: $dark;
+  }
+  &:last-child {
+    .toc-departments {
+      border-bottom: 0;
+    }
+  }
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: #777;
+}
+
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: $bdo;
+}
+
+.toc-departments {
+  border-bottom: 1px solid #ccc;
+}

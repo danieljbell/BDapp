@@ -1,0 +1,55 @@
+.column-header {
+  background: $column-blue !important;
+}
+
+.column-title {
+  font-family: 'BellGothic-Black', sans-serif;
+  color: #fff;
+  font-size: 1.25em;
+}
+
+.sponsor {
+  color: $column-green;
+  border-bottom: 1px solid $column-green;
+  font-family: 'Aleo-Regular', serif;
+  text-transform: uppercase;
+}
+
+.sponsor-logo {
+  width: 100%;
+  max-width: 220px;
+}
+
+.column-name {
+  font-family: 'Aleo-Light', serif;
+  font-size: 1.75em;
+  text-transform: none;
+  line-height: 0.95em;
+}
+
+.column-author {
+  font-size: 0.75em;
+}
+
+.column-story {
+  font-family: 'Aleo-Regular', serif;
+  p {
+    margin-bottom: 1em;
+    &:first-child {
+      color: $column-blue;
+      &:first-letter {
+        font-size: 6em;
+        line-height: 1em;
+        float: left;
+        margin: -0.85rem .35rem -0em -0.3rem;
+      }
+    }
+  }
+  h3 {
+    font-size: 1em;
+    font-family: 'Aleo-Regular', serif;
+    color: $column-green;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+}

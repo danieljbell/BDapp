@@ -1,0 +1,25 @@
+---
+layout: default
+title: Video Interview
+author: Bank Director Staff Writer
+category: departments
+---
+<div class="department p-x">
+  <h1 class="b-b">{{ page.title }}</h1>
+  <h3 class="b-b">Remaking the Bank</h3>
+  <article class="p-y">
+    <p>L<strong>ike a lot of other banks,</strong> Bank SNB ran into trouble with commercial real estate during the most recent financial crisis. Since then, it has reduced its reliance on commercial real estate, increased its portfolio of C&amp;I loans and is growing loans at a double digit rate. Mark Funke, who was brought in in 2012 to the lead bank in a change of strategy, talks here with <em>Bank Director</em> digital magazine about the bank's change of focus, risk profile and core values.</p>
+  </article>
+</div>
+<section class="video p-x p-y">
+  <iframe src="http://www.youtube.com/embed/bxpfj0VZTak?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;autohide=1&amp;vq=hd720" frameborder="0" allowfullscreen="" class="wrap story"></iframe>
+</section>
+
+{% include scripts/jquery.html %}
+{% include scripts/fitvids.html %}
+<script>
+$(document).ready(function(){
+  // Target your .container, .wrapper, .post, etc.
+  $("section").fitVids();
+});
+</script>

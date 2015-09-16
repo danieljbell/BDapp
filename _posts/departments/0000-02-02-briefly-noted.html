@@ -1,0 +1,66 @@
+---
+layout: default
+title: Briefly Noted
+author: Naomi Snyder
+category: departments
+---
+<div class="department p-x">
+  <h1 class="b-b">{{ page.title }}</h1>
+  <h3 class="b-b">Growth Has Been Hard to Come By</h3>
+  <p class="author"><strong>{{ page.author }}</strong> is managing editor for <em>Bank Director</em></p>
+  <article class="p-b m-b">
+    <p>G<strong>rowth has been hard to come by</strong> in this economy. Banks with strong growth are mostly growing at the expense of other banks. The following is a list of news developments and options for banks wishing to grow.</p>
+  </article>
+</div>
+
+<div class="noted">
+  <section class="accordian p-y">
+    <dl>
+      <dt class="m-x p-y">
+        Using Debt To Grow
+        <div class="accordian-number m-l">1</div>
+      </dt>
+      <dd>
+        <img src="{{ site.baseurl }}/img/briefly-noted1.jpg" alt="">
+        <p class="p-x p-t">Banks up to $1 billion in assets can now use higher levels of debt to fund dividends, acquire other banks, or otherwise grow and fund operations. The Federal Reserve amended the Small Bank Holding Company Policy Statement in the wake of Congress passing a law in 2014. Previously, the policy statement only applied to bank holding companies under $500 million.</p>
+      </dd>
+      <dt class="m-x p-y">
+        Why Your Customers Aren’t Using Mobile Banking
+        <div class="accordian-number m-l">2</div>
+      </dt>
+      <dd>
+        <img src="{{ site.baseurl }}/img/briefly-noted2.jpg" alt="">
+        <p class="p-x p-t">As smartphone use in the U.S. grows, some banks may not be experiencing the full benefits of that trend. Eighty-seven percent of the U.S. adult population has a mobile phone, and 71 percent have smartphones. Yet only 39 percent of smartphone users with a bank account said they used their phones to access their bank accounts within the last 12 months, according to a March survey by the Federal Reserve. Still fewer are using their smartphones to make payments—only 28 percent. Respondents said the primary reason they don’t use mobile for payments is that their needs are met without mobile banking—according to 86 percent. Security is also a big concern for more than half who don’t use their smartphone to make payments.</p>
+      </dd>
+      <dt class="m-x p-y">
+        Banks Ramp Up Digital Spend
+        <div class="accordian-number m-l">3</div>
+      </dt>
+      <dd>
+        <img src="{{ site.baseurl }}/img/briefly-noted3.jpg" alt="">
+        <p class="p-x p-t">Banks are trying to keep up with growing demands from customers for better technology, and about 24 percent of the total IT budget in U.S.-based banks and credit unions is spent on “digital transformation,” according to a report from IDC Financial Insights, published by International Data Corp. Growth in spending on “digital transformation” is outpacing overall IT spending growth by over 2.5 to 1, with a compound annual growth rate of 10.4 percent through 2019, the research firm says.</p>
+      </dd>
+      <dt class="m-x p-y">
+        A Small Bank With A High Price
+        <div class="accordian-number m-l">4</div>
+      </dt>
+      <dd>
+        <img src="{{ site.baseurl }}/img/briefly-noted4.jpg" alt="">
+        <p class="p-x p-t">First Financial Bancshares in Abilene, Texas, paid the highest price to tangible book value for any bank through the first of the year, when it announced an agreement in April to purchase FBC Bancshares, the parent company of $378.1 million asset First Bank in Conroe, Texas, at 404.53 percent of book value. J. Bruce Hildebrand, First Financial’s executive vice president and chief financial officer, explained that the price seemed high because the seller had done some estate planning before the deal was announced for the families that owned the bank, and had gotten permission from regulators to reduce capital levels, so tangible book value was low. First Financial is paying 16 times earnings based on earnings at the time of the announcement.</p>
+      </dd>
+    </dl>
+  </section>
+</div>
+
+{% include scripts/jquery.html %}
+<script>
+
+  $('dd').hide();
+
+  $('dl').on('click', 'dt', function() {
+
+    $(this).toggleClass('accordian-active').next().slideToggle();
+
+  });
+
+</script>

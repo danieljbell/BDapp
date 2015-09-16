@@ -1,0 +1,116 @@
+.feature {
+
+.byline {
+  background: $dark;
+  font-family: 'Sentinel-Book', serif;
+  font-style: italic;
+  color: #fff;
+  text-shadow: $text-shadow;
+  font-size: 0.85em;
+  line-height: 1.2em;
+}
+
+  .author {
+    font-size: 0.85em;
+    strong {
+      text-transform: uppercase;
+    }
+  }
+
+  article {
+    p {
+      text-indent: 1em;
+      &:first-child {
+        text-indent: 0;
+        &:first-letter {
+          color: $bdo;
+          font-family: 'GriffithGothicCond-Light', sans-serif;
+          font-size: 6em;
+          line-height: 1em;
+          float: left;
+          margin: -0.85rem .35rem -0em -0.3rem;
+        }
+      }
+    }
+    blockquote {
+      font-family: 'GriffithGothicCond-Light', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.25em;
+      line-height: 1.1em;
+      border-left: 0;
+      padding: 0;
+      margin: 0;
+      strong {
+        font-family: 'GriffithGothicCond-Black', sans-serif;
+        line-height: 0.95em;
+        display: inline-block;
+      }
+    }
+  }
+
+  .modal-button {
+    display: block;
+    width: 100%;
+    background: $feature1;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'GriffithGothicCond-Black', sans-serif;
+    text-shadow: $button-text-shadow;
+    box-shadow: $button-shadow;
+    white-space: initial;
+    font-size: 1.25em;
+    line-height: 1em;
+    transition: opacity 300ms ease-in-out;
+    border-radius: 0.5em;
+    border: 0;
+    &:hover, &:focus {
+      color: #fff;
+    }
+  }
+
+  .modal-header p {
+    text-indent: 0;
+    font-size: 0.75em;
+    line-height: 0.75em;
+    margin-bottom: 0;
+    margin-left: 0.25em;
+  }
+
+  .modal-title {
+    color: $feature1;
+    font-size: 1em;
+    margin: 0 0 0 0.25em;
+  }
+
+  .accordian {
+    background-color: #fff;
+  }
+
+  dl {
+    color: $dark;
+    dt {
+      color: $dark;
+      padding: 0;
+
+
+    }
+  }
+
+  .col-xs-1, .col-xs-11, .col-xs-12 {
+    padding: 0 0.25em;
+  }
+
+  table {
+    width: 100%;
+    strong {
+      font-family: 'BellGothic-Bold', sans-serif;
+    }
+    tr:nth-child(2n) {
+      background-color: #f0f0f0;
+    }
+    td {
+      font-size: 0.85em;
+      padding: 0.25em;
+    }
+  }
+}

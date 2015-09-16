@@ -1,0 +1,105 @@
+/*
+------------------
+COLORS
+------------------
+*/
+$bdo: #f37021;
+$dark: rgba(0,0,0,0.75);
+$toc: #ff991a;
+$feature1: #b9004e;
+$column-blue: #005a9c;
+$column-green: #6aa744;
+
+
+/*
+------------------
+SHADOWS
+------------------
+*/
+$text-shadow: 3px 3px 3px rgba(0,0,0,0.75);
+$button-text-shadow: 1px 2px 2px rgba(0,0,0,0.75);
+$button-shadow: 1px 2px 2px rgba(0,0,0,0.75);
+
+
+/*
+------------------
+FONT IMPORTS
+------------------
+*/
+@font-face {
+	font-family: 'BellGothic-Light';
+	src: url('../fonts/BellGothic-Light.otf');
+}
+
+@font-face {
+	font-family: 'BellGothic-Bold';
+	src: url('../fonts/BellGothic-Bold.otf');
+}
+
+@font-face {
+	font-family: 'BellGothic-Black';
+	src: url('../fonts/BellGothic-Black.otf');
+}
+
+@font-face {
+	font-family: 'GriffithGothicCond-Light';
+	src: url('../fonts/GriffithGothicCond-Light.ttf');
+}
+
+@font-face {
+	font-family: 'GriffithGothicCond-Black';
+	src: url('../fonts/GriffithGothicCond-Black.ttf');
+}
+
+@font-face {
+	font-family: 'Sentinel-Book';
+	src: url('../fonts/Sentinel-Book.otf');
+}
+
+@font-face {
+	font-family: 'Sentinel-Light';
+	src: url('../fonts/Sentinel-Light.otf');
+}
+
+@font-face {
+	font-family: 'Sentinel-BookItal';
+	src: url('../fonts/Sentinel-BookItal.otf');
+}
+
+@font-face {
+	font-family: 'Aleo-Regular';
+	src: url('../fonts/Aleo-Regular.otf');
+}
+
+@font-face {
+	font-family: 'Aleo-Light';
+	src: url('../fonts/Aleo-Light.otf');
+}
+
+/*
+------------------
+MIXINS
+------------------
+*/
+@mixin bp {
+  @media (min-width: 350px) { @content; }
+}
+
+
+/*
+------------------
+MODULE IMPORTS
+------------------
+*/
+@import "libs/bootstrap.min",
+				"libs/owl.carousel",
+				"libs/owl.theme",
+				"defaults",
+				"utilites",
+        "modules/header",
+				"modules/toc",
+				"modules/accordian",
+				"modules/video",
+				"modules/department",
+				"modules/column",
+				"modules/features";

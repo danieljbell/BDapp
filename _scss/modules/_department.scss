@@ -1,0 +1,54 @@
+.department {
+  h1 {
+    font-size: 1.1em;
+  }
+  h3 {
+    margin-top: 0;
+    padding-bottom: 0.75em;
+    margin-bottom: 0.25em;
+  }
+  h4 {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .author {
+    font-size: 0.75em;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  article {
+    p {
+      text-indent: 1em;
+      &:first-child {
+        text-indent: 0;
+        &:first-letter {
+          color: $bdo;
+          font-family: 'GriffithGothicCond-Light', sans-serif;
+          font-size: 6em;
+          line-height: 1em;
+          float: left;
+          margin: -0.85rem .35rem -0em -0.3rem;
+        }
+      }
+    }
+  }
+  .contact {
+    text-align: center;
+    p:nth-child(2) {
+      font-size: 0.65em;
+      margin: 1em 0;
+      a {
+        color: $dark;
+      }
+    }
+    .icon {
+      svg {
+        width: 100%;
+        max-width: 20px;
+      }
+    }
+  }
+}

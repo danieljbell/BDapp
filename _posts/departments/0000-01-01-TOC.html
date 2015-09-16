@@ -1,0 +1,53 @@
+---
+layout: default
+title: Table of Contents
+category: departments
+---
+<div class="toc-bg">
+  <h1>{{ site.name }} Contents</h1>
+</div>
+<div id="owl-example" class="owl-carousel">
+  {% for post in site.posts reversed %}
+    {% if post.category == 'features' %}
+    <a href="{{ post.url }}">
+      <img src="{{ site.baseurl}}/img/{{ post.computer-title }}.jpg" alt="">
+      <h1 class="p-x">{{ post.title }}</h1>
+    </a>
+    {% endif %}
+  {% endfor %}
+</div>
+<div class="p-b">
+  {% for post in site.posts reversed %}
+    {% if post.category == 'departments' %}
+      {% if post.title != 'Table of Contents' %}
+      <a href="{{ post.url }}">
+        <div class="m-x toc-departments">
+          <h2>{{ post.title }}</h2>
+          {% if post.author != null %}
+            <p><em>By: {{ post.author }}</em></p>
+          {% endif %}
+        </div>
+      </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% include scripts/jquery.html %}
+{% include scripts/owl.carousel.html %}
+<script>
+
+	$(document).ready(function() {
+
+	  var owl = $('.owl-carousel');
+	  owl.owlCarousel({
+	  	autoplay:true,
+			autoplayTimeout:1000,
+			autoplayHoverPause:false
+	  });
+
+	  owl.trigger('owl.play',5000);
+
+	});
+
+</script>

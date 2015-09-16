@@ -1,0 +1,104 @@
+/*
+------------------
+SPACING
+------------------
+*/
+
+// PADDING
+.p-x {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.p-y {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.p-t {
+  padding-top: 1rem !important;
+}
+
+.p-r {
+  padding-right: 1rem !important;
+}
+
+.p-r-m {
+  padding-right: 3rem !important;
+}
+
+.p-b {
+  padding-bottom: 1rem !important;
+}
+
+.p-l {
+  padding-left: 1rem !important;
+}
+
+// MARGIN
+.m-x {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+
+.m-y {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.m-t {
+  margin-top: 1rem !important;
+}
+
+.m-t-m {
+  margin-top: 1.5rem !important;
+}
+
+.m-r {
+  margin-right: 1rem !important;
+}
+
+.m-b {
+  margin-bottom: 1rem !important;
+}
+
+.m-b-m {
+  margin-bottom: 1.5rem !important;
+}
+
+.m-l {
+  margin-left: 1rem !important;
+}
+
+
+
+/*
+------------------
+BORDERS
+------------------
+*/
+.b-x {
+  border-top: 1px solid $dark !important;
+  border-bottom: 1px solid $dark !important;
+}
+
+.b-y {
+  border-left: 1px solid $dark !important;
+  border-right: 1px solid $dark !important;
+}
+
+.b-t {
+  border-top: 1px solid $dark !important;
+}
+
+.b-r {
+  border-right: 1px solid $dark !important;
+}
+
+.b-b {
+  border-bottom: 1px solid $dark !important;
+}
+
+.b-l {
+  border-left: 1px solid $dark !important;
+}

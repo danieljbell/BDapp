@@ -1,0 +1,51 @@
+html, body {
+  font-family: 'BellGothic-Light', sans-serif;
+  font-size: 20px;
+  line-height: 1.4em;
+}
+
+img {
+  width: 100%;
+}
+
+/*
+------------------
+TYPOGRAPHY DEFAULTS
+------------------
+*/
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'GriffithGothicCond-Light', sans-serif;
+  line-height: .9em;
+  font-size: 1.9em;
+}
+
+h2 {
+  font-family: 'BellGothic-Black', sans-serif;
+  font-size: 1rem;
+}
+
+h3 {
+  font-family: 'GriffithGothicCond-Black', sans-serif;
+  font-size: 2rem;
+  line-height: 0.85em;
+}
+
+h4 {
+  font-family: 'Sentinel-Book', serif;
+  color: $bdo;
+  font-size: 1.25em;
+  line-height: 0.9em;
+}
+
+a, a:hover, a:visited, a:link {
+  color: $bdo;
+  text-decoration: none;
+}
+
+strong {
+  font-family: 'BellGothic-Black', sans-serif;
+}
